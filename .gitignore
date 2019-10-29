@@ -1,0 +1,7 @@
+/API/node_modules
+./API/node_modules
+./API/src/uploads
+/API/src/uploads
+/API/variables.env
+/frontend-crm/node_modules
+./frontend-crm/node_modules

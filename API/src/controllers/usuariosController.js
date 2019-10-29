@@ -23,7 +23,7 @@ exports.autenticarUsuario = async (req, res, next) => {
     if (!usuario) {
         await res.status(401).json({mensaje: 'Ese usuario no existe'});
         next();
-    } else {
+    } else {    
         if (!bcrypt.compareSync(password, usuario.password)) {
             // si el password es incorrecto
             await res.status(401).json({mensaje: 'Password incorrecto'});
@@ -40,7 +40,6 @@ exports.autenticarUsuario = async (req, res, next) => {
 
             // retornar el token
             res.json({token});
-
         }
     }
 }

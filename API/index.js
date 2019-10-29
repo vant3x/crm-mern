@@ -7,8 +7,8 @@ require('dotenv').config({path:'variables.env'});
 // init
 const app = express();
 
-// settings
- /* prod  arreglar error
+// settings 
+ /* prod  arreglar error   
     const host = process.env.HOST || '0.0.0.0'; 
 */
 app.set('port', process.env.PORT || 5000);
